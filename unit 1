@@ -1,0 +1,33 @@
+NUMBER SYSTEM:   CODES:
+1.	BCD code: 
+	Binary Coded Decimal is the simplest binary code that is used for the representation of decimal numbers in which each decimal number is represented by 4 bits. These codes are used in electronic calculators, digital voltmeters, clocks and older computers. Modern computers do not use BCD numbers due to their complexity in forming complements and calculations.
+Decimal	BCD
+5	0101
+9	1001
+1 5 	0001 0101
+EG: 
+
+
+
+
+2.	Gray Code:
+	Codes that are also used for the representation of decimal numbers but the method don’t depend upon the weight of digits. So, gray codes are unweighted codes. It depends upon transitions. The bits are arranged in such a way that it changes by only one bit as it sequences from one number to the next. So, the transition errors are minimized. These codes are used in Shaft Encoders (Rotational Encoders).
+Decimal	Binary	Gray
+5	101	111
+9	1001	1101
+15	1111	1000
+EG:
+
+
+
+
+Remember: MSB of Binary = MSB of Gray
+3.	Alphanumeric Code:
+	Most applications of digital computers require handling of data that consist not only of numbers, but also of the letters of the alphabet and certain special characters. An alphanumeric character set is a set of elements that includes the 10 decimal digits, the 26 letters of the alphabet and a number of special characters such as £, $, +, - etc. Such a set contains between 32 to 64 elements, if only uppercase letters are included or between 64 to 128 if both uppercase and lowercase letters are included. In the first case, the binary code will require six bits (64-6 bits) and in the second case, seven bits. (128-7 bits)
+	The ASCII (American Standard Code for Information Interchange) code is the standard alphanumeric binary code. In ASCII, each character is represented by a 7-bit code and usually an eighth bit is inserted for parity.
+	Another Alphanumeric Code used in IBM equipment is the EBCDIC (Extended BCD Interchange Code). It uses eighth bits for each character and a ninth bit is for parity.
+
+PARITY: The most common error detection code is the parity bit. It is the simple process of adding a special code bit to a data word that allows the detection of a single error in a given code word in which it is used. The coding is done in even or odd basis. Even parity means the number of 1’s in the data word including the parity bit is even and Odd parity means the number of 1’s in the data word including the parity bit is odd. Eg: the ‘A’ in ASCII Code is (100 0001)
+‘A’ in ASCII when coded with even parity is 	( 0 100 0001 )
+‘A’ in ASCII when coded with odd parity is 	( 1 100 0001 )
+
